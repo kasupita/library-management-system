@@ -6,7 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { LogIn } from 'lucide-react';
 
+import { useEffect } from 'react';
+import { useTheme } from 'next-themes';
+
 export default function Login() {
+
+
+  
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
