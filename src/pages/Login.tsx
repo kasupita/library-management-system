@@ -7,12 +7,6 @@ import { Input } from '@/components/ui/input';
 import { LogIn } from 'lucide-react';
 
 export default function Login() {
-
-  const { setTheme } = useTheme();
-
-useEffect(() => {
-  setTheme("light");
-}, []);
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
