@@ -13,10 +13,7 @@ export default function Login() {
   const [isLoading, setIsLoading] = useState(false);
   const { setCurrentUser, refetchData } = useLibrary();
   const navigate = useNavigate();
-  const { setTheme } = useTheme();
-    useEffect(() => {
-    setTheme("light");
-  }, []);
+  
 
   const [identifier, setIdentifier] = useState('');
 
