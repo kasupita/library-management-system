@@ -11,6 +11,16 @@ import { useTheme } from 'next-themes';
 
 export default function Login() {
 
+  const { setTheme } = useTheme();
+
+useEffect(() => {
+  setTheme("light");
+
+  return () => {
+    // restore system theme after leaving login
+    setTheme("system");
+  };
+}, []);
 
   
   const [identifier, setIdentifier] = useState('');
