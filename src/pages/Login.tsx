@@ -59,10 +59,7 @@ export default function Login() {
               <h2 className="text-2xl font-semibold tracking-tight">
                 Welcome to SIBA Campus Library Management System
               </h2>
-              <p className="mt-3 text-sm text-purple-200">
-                Inventory management, borrowing system, donations, and user
-                control — all in one centralized platform.
-              </p>
+              
             </div>
 
             <p className="text-xs text-purple-300">
